@@ -1,10 +1,10 @@
 import './App.scss';
 import { React } from 'react';
-import Button from '@material-ui/core/Button';
+import Buttons from './components/buttons';
 
 const App = () =>
 	<div className="App">
-		<Button>Hello World</Button>
+		{ Buttons() }
 	</div>;
 
 export default App;
