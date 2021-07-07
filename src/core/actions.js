@@ -2,13 +2,18 @@ const setTheme = ({ data }) => ({
 	darkTheme: data,
 });
 
-const setValue = ({ data }) => ({
+const setFontValue = ({ data }) => ({
 	fontValue: data,
+});
+
+const setFontStyle = ({ data }) => ({
+	selection: data,
 });
 
 const actions = {
 	setTheme,
-	setValue,
+	setFontValue,
+	setFontStyle,
 };
 
 export default actions;

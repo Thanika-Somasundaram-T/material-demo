@@ -5,9 +5,11 @@ import context from './core/context';
 import FontSlider from './components/fontSlider';
 import ThemeSwitch from './components/themeSwitch';
 import Buttons from './components/buttons';
+import Selection from './components/selection';
 
 const style = () => ({
 	fontSize: `${ context.state.fontValue }px`,
+	fontFamily: `${ context.state.selection }`,
 });
 
 const App = () =>
@@ -16,10 +18,11 @@ const App = () =>
 		className={ `App ${ context.state.darkTheme ? 'dark' : 'light' }` }
 	>
 		CHECK - FONT
-		<Button color="primary">Hello World</Button>
+		<div><Button color="primary">Hello World</Button> </div>
 		{ Buttons() }
 		{ ThemeSwitch() }
 		{ FontSlider() }
+		{ Selection() }
 	</div>;
 
 export default App;

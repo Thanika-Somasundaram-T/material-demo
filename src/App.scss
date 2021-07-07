@@ -1,7 +1,8 @@
 .App {
 	background-color: #eee;
 	text-align: center;
-
+	min-height: 100vh;
+	overflow: auto;
 }
 
 .dark {
@@ -10,5 +11,10 @@
 }
 
 .light {
-	background-color: rgb(255, 255, 145);
+	background-color: rgb(207, 224, 200);
+}
+
+.font-slider {
+	width: 200px;
+	margin-left: 42%;
 }
